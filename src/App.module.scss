@@ -1,0 +1,144 @@
+.container{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  header{
+    margin: 8rem 0;
+  }
+  
+  .mainContainer {
+
+    .titleConsult {
+      font-size: 2rem;
+      font-weight: bold;
+      
+      color: var(--blue);
+
+      text-align: center;
+    }
+
+    form {
+      margin: 0 auto;
+      margin-top: 3rem;
+      margin-bottom: 11rem;
+      border: 3px solid var(--green);
+      border-radius: 2.5rem;
+      width: 44rem;
+      height: 5.1rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+      input{
+        font-size: 2.8rem;
+        border-radius: 2.5rem;
+        text-align: center;
+        width: 44rem;
+
+        &::placeholder {
+          color: var(--gray);
+        }
+
+        &:focus{
+          outline: transparent;
+        }
+
+      }
+
+      button{
+        margin-right: 2rem;
+        background: transparent;
+        height: 3.5rem;
+        width: 3.3rem;
+      }
+
+    }
+
+    .returnSucess {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10rem;
+      
+      margin: 0 auto;
+
+      p{
+        font-size: 3.5rem;
+        text-align: center;
+      }
+
+      .subTitle{
+        font-size: 2rem;
+        color: var(--blue-light);
+      }
+    }
+
+    .returnInsucess {
+      font-size: 3.5rem;
+      color: var(--danger);
+
+      p{
+        margin-bottom: 6rem;
+        text-align: center;
+      }
+    }
+  
+  }
+
+}
+
+// RESPONSIVIDADE
+
+@media (max-width: 425px){
+  .container{
+    .mainContainer {
+
+      form {
+        width: 34rem;
+        height: 5.1rem;
+        input{
+          width: 29rem;
+          font-size: 2.1rem;
+        }
+      
+      }
+
+      .returnSucess {
+        display: flex;
+        flex-direction: column;
+
+        .valorResult{
+          display: none;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 340px){
+  .container{
+    .mainContainer {
+
+      form {
+        width: 28rem;
+        height: 5.1rem;
+        input{
+          width: 25rem;
+          font-size: 1.8rem;
+        }
+      
+      }
+
+      .returnSucess {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,50 @@
+:root{
+  --white: #FFFFFF;
+  --blue: #007dbf;
+  --blue-dark: #006699;
+  --blue-light: #0099cc;
+  --green: #99cc33;
+  --gray: #b8b4b4;
+
+  --danger: #ff0000;
+
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+}
+
+body{
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+body, input, textarea, button {
+  font-family: source-sans-pro, sans-serif;
+  color: var(--blue-dark);
+}
+
+button {
+  cursor: pointer;
+
+  transition: filter 0.2s;
+}
+
+button:hover{
+  filter: brightness(0.9);
+}
+
+@media (max-width: 425px){
+ 
+  body{
+    width: 100vw;
+  }
+
+}
